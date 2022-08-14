@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Blog</title>
+        <link>https://clgar.github.io/posts/</link>
+        <description>All Posts | Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Aug 2022 18:12:01 &#43;0530</lastBuildDate><atom:link href="https://clgar.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>About Me</title>
+    <link>https://clgar.github.io/about/</link>
+    <pubDate>Sun, 14 Aug 2022 18:12:01 &#43;0530</pubDate><author>
+        <name>CIGAR</name>
+    </author><guid>https://clgar.github.io/about/</guid>
+    <description><![CDATA[Hi, I’m Monit👋. → I live in Gujarat,India, and I’m a Cyber Security Student → I avoid love coffee* (sidenote: But I did go through a zero-caffeine phase, so now I’m a rather moderate coffee drinker.), tweet occasionally, have a few → interesting side projects, and try to do open source. → To get a better idea of what I’ve been working on, check out my GitHub. → If you like any of my projects, or posts on this blog, please do let me know via email, I’d love to hear from you!]]></description>
+</item><item>
+    <title>CTF</title>
+    <link>https://clgar.github.io/ctf/</link>
+    <pubDate>Sun, 14 Aug 2022 18:12:01 &#43;0530</pubDate><author>
+        <name>CIGAR</name>
+    </author><guid>https://clgar.github.io/ctf/</guid>
+    <description><![CDATA[ Domain Name Level Link TryHackMe Agent-T Easy click here TryHackMe Olympus Medium click here TryHackMe Hacker vs Hacker Medium click here ]]></description>
+</item></channel>
+</rss>

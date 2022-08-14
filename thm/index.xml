@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thms on Blog</title>
+    <link>https://clgar.github.io/thm/</link>
+    <description>Recent content in Thms on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2022 00:01:31 +0530</lastBuildDate><atom:link href="https://clgar.github.io/thm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Olympus</title>
+      <link>https://clgar.github.io/thm/oly/</link>
+      <pubDate>Mon, 15 Aug 2022 00:01:31 +0530</pubDate>
+      
+      <guid>https://clgar.github.io/thm/oly/</guid>
+      <description>Olympus Scanning:- Nmap:- nmap -A -T4 -p- [ IP ] 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 3072 0a:78:14:04:2c:df:25:fb:4e:a2:14:34:80:0b:85:39 (RSA) | 256 8d:56:01:ca:55:de:e1:7c:64:04:ce:e6:f1:a5:c7:ac (ECDSA) |_ 256 1f:c1:be:3f:9c:e7:8e:24:33:34:a6:44:af:68:4c:3c (ED25519) 80/tcp open http Apache httpd 2.4.41 ((Ubuntu)) |_http-title: Olympus |_http-server-header: Apache/2.</description>
+    </item>
+    
+    <item>
+      <title>Agent</title>
+      <link>https://clgar.github.io/thm/agent/</link>
+      <pubDate>Sun, 14 Aug 2022 18:12:01 +0530</pubDate>
+      
+      <guid>https://clgar.github.io/thm/agent/</guid>
+      <description>Agent-T
+Nmap:- 1 2 3 4 5 6 7 8 Nmap scan report for 10.10.101.180 Host is up (0.15s latency). Not shown: 65534 closed tcp ports (conn-refused) PORT STATE SERVICE VERSION 80/tcp open http? Service detection performed. Please report any incorrect results at https://nmap.org/submit/ . Nmap done: 1 IP address (1 host up) scanned in 701.06 seconds Nikto:- 1 2 3 4 5 6 7 8 9 10 11 12 - Nikto v2.</description>
+    </item>
+    
+    <item>
+      <title>hacker_vs_hacker</title>
+      <link>https://clgar.github.io/thm/hacker_vs_hacker/</link>
+      <pubDate>Sun, 14 Aug 2022 18:12:01 +0530</pubDate>
+      
+      <guid>https://clgar.github.io/thm/hacker_vs_hacker/</guid>
+      <description>Hacker vs Hacker
+Nmap:-Nmap -A -T4 -p- [IP]
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 Not shown: 65533 closed tcp ports (reset) PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 3072 9f:a6:01:53:92:3a:1d:ba:d7:18:18:5c:0d:8e:92:2c (RSA) | 256 4b:60:dc:fb:92:a8:6f:fc:74:53:64:c1:8c:bd:de:7c (ECDSA) |_ 256 83:d4:9c:d0:90:36:ce:83:f7:c7:53:30:28:df:c3:d5 (ED25519) 80/tcp open http Apache httpd 2.</description>
+    </item>
+    
+  </channel>
+</rss>
