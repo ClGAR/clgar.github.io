@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vulnubs on Blog</title>
+    <link>https://clgar.github.io/vulnub/</link>
+    <description>Recent content in Vulnubs on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Aug 2022 18:12:01 +0530</lastBuildDate><atom:link href="https://clgar.github.io/vulnub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aragog</title>
+      <link>https://clgar.github.io/vulnub/aragog/</link>
+      <pubDate>Sun, 14 Aug 2022 18:12:01 +0530</pubDate>
+      
+      <guid>https://clgar.github.io/vulnub/aragog/</guid>
+      <description>Aragog
+Nmap:-sudo nmap -A -T4 -p- [Ip-addr]
+1 2 3 4 5 6 7 8 9 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0) | ssh-hostkey: | 2048 48:df:48:37:25:94:c4:74:6b:2c:62:73:bf:b4:9f:a9 (RSA) | 256 1e:34:18:17:5e:17:95:8f:70:2f:80:a6:d5:b4:17:3e (ECDSA) |_ 256 3e:79:5f:55:55:3b:12:75:96:b4:3e:e3:83:7a:54:94 (ED25519) 80/tcp open http Apache httpd 2.4.38 ((Debian)) |_http-title: Site doesn&amp;#39;t have a title (text/html). |_http-server-header: Apache/2.4.38 (Debian) Enumeration:-sudo gobuster dir -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u http://10.0.2.6
+/Blog
+Which means there are some plugins which can be possibly exploitable.</description>
+    </item>
+    
+  </channel>
+</rss>

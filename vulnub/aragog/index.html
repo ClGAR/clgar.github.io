@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">Aragog - Blog</title><meta name="Description" content="This is My New Hugo Site"><meta property="og:title" content="Aragog" />
+<meta property="og:description" content="Aragog
+Nmap:-sudo nmap -A -T4 -p- [Ip-addr]
+1 2 3 4 5 6 7 8 9 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 7.9p1 Debian 10&#43;deb10u2 (protocol 2.0) | ssh-hostkey: | 2048 48:df:48:37:25:94:c4:74:6b:2c:62:73:bf:b4:9f:a9 (RSA) | 256 1e:34:18:17:5e:17:95:8f:70:2f:80:a6:d5:b4:17:3e (ECDSA) |_ 256 3e:79:5f:55:55:3b:12:75:96:b4:3e:e3:83:7a:54:94 (ED25519) 80/tcp open http Apache httpd 2.4.38 ((Debian)) |_http-title: Site doesn&#39;t have a title (text/html). |_http-server-header: Apache/2.4.38 (Debian) Enumeration:-sudo gobuster dir -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u http://10.0.2.6
+/Blog
+Which means there are some plugins which can be possibly exploitable." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://clgar.github.io/vulnub/aragog/" /><meta property="og:image" content="https://clgar.github.io/logo.png"/><meta property="article:section" content="vulnub" />
+<meta property="article:published_time" content="2022-08-14T18:12:01+05:30" />
+<meta property="article:modified_time" content="2022-08-14T18:12:01+05:30" /><meta property="og:site_name" content="My New Hugo Site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://clgar.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Aragog"/>
+<meta name="twitter:description" content="Aragog
+Nmap:-sudo nmap -A -T4 -p- [Ip-addr]
+1 2 3 4 5 6 7 8 9 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 7.9p1 Debian 10&#43;deb10u2 (protocol 2.0) | ssh-hostkey: | 2048 48:df:48:37:25:94:c4:74:6b:2c:62:73:bf:b4:9f:a9 (RSA) | 256 1e:34:18:17:5e:17:95:8f:70:2f:80:a6:d5:b4:17:3e (ECDSA) |_ 256 3e:79:5f:55:55:3b:12:75:96:b4:3e:e3:83:7a:54:94 (ED25519) 80/tcp open http Apache httpd 2.4.38 ((Debian)) |_http-title: Site doesn&#39;t have a title (text/html). |_http-server-header: Apache/2.4.38 (Debian) Enumeration:-sudo gobuster dir -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u http://10.0.2.6
+/Blog
+Which means there are some plugins which can be possibly exploitable."/>
+<meta name="application-name" content="Blog">
+<meta name="apple-mobile-web-app-title" content="Blog">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://clgar.github.io/vulnub/aragog/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Aragog",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/clgar.github.io\/vulnub\/aragog\/"
+        },"genre": "vulnub","wordcount":  137 ,
+        "url": "https:\/\/clgar.github.io\/vulnub\/aragog\/","datePublished": "2022-08-14T18:12:01+05:30","dateModified": "2022-08-14T18:12:01+05:30","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "CIGAR"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Blog"><span class="header-title-pre"><i class='fas fa-terminal'></i></span><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/"><i class='fa fa-heart'></i> about </a><a class="menu-item" href="/ctf/">🏁 CTF </a><a class="menu-item" href="/projects/">🛠 Projects </a><a class="menu-item" href="/resume/">👔 Resume </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Blog"><span class="header-title-pre"><i class='fas fa-terminal'></i></span><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/about/" title=""><i class='fa fa-heart'></i>about</a><a class="menu-item" href="/ctf/" title="">🏁CTF</a><a class="menu-item" href="/projects/" title="">🛠Projects</a><a class="menu-item" href="/resume/" title="">👔Resume</a><a href="#" onclick="return false;" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Aragog</h1><div class="content" id="content"><h1 id="aragog" class="headerLink">
+    <a href="#aragog" class="header-mark"></a>Aragog</h1><p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled.png"
+        title="Untitled"></p>
+<h2 id="nmap-" class="headerLink">
+    <a href="#nmap-" class="header-mark"></a>Nmap:-</h2><p><strong>sudo nmap -A -T4 -p- [Ip-addr]</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">PORT   STATE SERVICE VERSION
+</span></span><span class="line"><span class="cl">22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+</span></span><span class="line"><span class="cl">| ssh-hostkey: 
+</span></span><span class="line"><span class="cl">|   2048 48:df:48:37:25:94:c4:74:6b:2c:62:73:bf:b4:9f:a9 (RSA)
+</span></span><span class="line"><span class="cl">|   256 1e:34:18:17:5e:17:95:8f:70:2f:80:a6:d5:b4:17:3e (ECDSA)
+</span></span><span class="line"><span class="cl">|_  256 3e:79:5f:55:55:3b:12:75:96:b4:3e:e3:83:7a:54:94 (ED25519)
+</span></span><span class="line"><span class="cl">80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+</span></span><span class="line"><span class="cl">|_http-title: Site doesn&#39;t have a title (text/html).
+</span></span><span class="line"><span class="cl">|_http-server-header: Apache/2.4.38 (Debian)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="enumeration-" class="headerLink">
+    <a href="#enumeration-" class="header-mark"></a><strong>Enumeration:-</strong></h2><p>sudo gobuster dir -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u <a href="http://10.0.2.6/" target="_blank" rel="noopener noreffer">http://10.0.2.6</a></p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%201.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%201.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%201.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%201.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%201.png"
+        title="Untitled"></p>
+<h2 id="blog" class="headerLink">
+    <a href="#blog" class="header-mark"></a>/Blog</h2><p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%202.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%202.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%202.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%202.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%202.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%203.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%203.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%203.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%203.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%203.png"
+        title="Untitled"></p>
+<p>Which means there are some plugins which can be possibly exploitable.</p>
+<h2 id="wordpress-scan-" class="headerLink">
+    <a href="#wordpress-scan-" class="header-mark"></a>Wordpress Scan:-</h2><p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%204.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%204.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%204.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%204.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%204.png"
+        title="Untitled"></p>
+<h2 id="exploiting-wp-file-manager-" class="headerLink">
+    <a href="#exploiting-wp-file-manager-" class="header-mark"></a>Exploiting wp-file-manager:-</h2><p>WP-file-manager wordpress plugin (&lt;6.9) vulnerable to unauthenticated arbitary file upload resulting in full compromise of the system.</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%205.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%205.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%205.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%205.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%205.png"
+        title="Untitled"></p>
+<h2 id="reverse-shell-" class="headerLink">
+    <a href="#reverse-shell-" class="header-mark"></a>Reverse Shell:-</h2><p><a href="http://10.0.2.6/blog/wp-content/plugins/wp-file-manager/lib/files/abc.php" target="_blank" rel="noopener noreffer">http://10.0.2.6/blog/wp-content/plugins/wp-file-manager/lib/files/abc.php</a></p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%206.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%206.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%206.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%206.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%206.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%207.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%207.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%207.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%207.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%207.png"
+        title="Untitled"></p>
+<p>Local privilege escalation</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%208.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%208.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%208.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%208.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%208.png"
+        title="Untitled"></p>
+<p>Let’s Login into mysql</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%209.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%209.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%209.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%209.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%209.png"
+        title="Untitled"></p>
+<p>Cracking Hash:-</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2010.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2010.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2010.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2010.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2010.png"
+        title="Untitled"></p>
+<p>Let’s ssh Login into hagrid98.</p>
+<p><strong>privilege escalation:-</strong></p>
+<p>monitor all process using pspy.</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2011.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2011.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2011.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2011.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2011.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2012.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2012.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2012.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2012.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2012.png"
+        title="Untitled"></p>
+<p>File is editable by hagrid98 which later executed as root.</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2013.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2013.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2013.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2013.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2013.png"
+        title="Untitled"></p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2014.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2014.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2014.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2014.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2014.png"
+        title="Untitled"></p>
+<p><strong>./bash -p</strong></p>
+<p>We become root.</p>
+<p><img
+        class="lazyload"
+        data-src="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2015.png"
+        data-srcset="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2015.png, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2015.png 1.5x, /aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2015.png 2x"
+        data-sizes="auto"
+        alt="/aragog%20f70d02f6e3b84b98826e52722a78ed2f/Untitled%2015.png"
+        title="Untitled"></p>
+</div><div id="comments"></div></div></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">CIGAR</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"desktop-header-typeit":"CIGAR#","mobile-header-typeit":"CIGAR#"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript></div>
+</body>
+
+</html>
