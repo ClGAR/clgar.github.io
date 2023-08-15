@@ -127,7 +127,7 @@ theme = "FixIt"
 [params.social]
     GitHub = "ClGAR"
     Email = "monitkhatri685@gmail.com"
-    TryHackMe = "https://tryhackme.com/p/CIGAR"
-    HackTheBox = "https://app.hackthebox.com/users/534586"
+    TryHackMe = "CIGAR"
+    HackTheBox = "534586"
 
 
