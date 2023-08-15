@@ -1,0 +1,119 @@
+title = "My New Hugo FixIt Site"
+baseURL = "http://example.org/"
+# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+defaultContentLanguage = "en"
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "en"
+
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FixIt"
+
+[params]
+  # FixIt theme version
+  version = "0.2.X"
+  description = "Monit"
+[params.header]
+    # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
+    desktopMode = "sticky"
+    # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
+    mobileMode = "auto"
+    # FixIt 0.2.0 | NEW Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = "/bash.png"
+      # title name
+      name = "ClGAR"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # FixIt 0.2.5 | NEW whether to use typeit animation for title name
+      typeit = false
+    # FixIt 0.2.12 | NEW Header subtitle config
+    [params.header.subtitle]
+      # subtitle name
+      name = ""
+      # whether to use typeit animation for subtitle name
+      typeit = false
+[params.home]
+    # FixIt 0.2.0 | NEW amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = "xx@xx.com"
+      # URL of avatar shown in home page
+      avatarURL = "/bash_1.png"
+      # FixIt 0.2.17 | NEW identifier of avatar menu link
+      avatarMenu = ""
+      # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page
+      subtitle = "Hi, I am Monit Khatri"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      #social = true
+      # FixIt 0.2.0 | NEW disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+    # add user-defined content to menu items
+    [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-archive"
+      # set menu item type, optional values: ["mobile", "desktop"]
+      type = ""
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-th"
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-tags"
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/hugo-fixit/FixIt/issues/43)
+    noClasses = false
+
+[params.social]
+    GitHub = "Lruihao"
