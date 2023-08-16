@@ -45,7 +45,7 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 1125.60 seconds
 ```
 
-
+/
 
 # User Flag
 
@@ -73,7 +73,7 @@ sudo nano /etc/hosts
 <Ip address> keeper.htb tickets.keeper.htb
 ```
 
-When I visit the URL, a login page appears. However, we can use the default username and password
+We have request tracker website. However we can use default username and password.
 
 ![Untitled](/keeper/Untitled%202.png)
 
