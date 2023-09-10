@@ -13,3 +13,4 @@ draft: false
 | TryHackMe   | Hacker vs Hacker   | [Link](/categories/tryhackme/hackervshacker/)  |
 | TryHackMe   | Intro to docker  | [Link](/categories/tryhackme/introtodocker/)  |
 | HackTheBox   | Keeper  | [Link](/categories/tryhackme/keeper/)  |
+| HackTheBox   | Cozyhosting  | [Link](/categories/tryhackme/cozyhosting/)  |
